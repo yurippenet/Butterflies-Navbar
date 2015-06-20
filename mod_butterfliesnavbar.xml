@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="site"
+	method="upgrade">
+	<name>Butterflies Nav</name>
+	<author>Kristian Gausel</author>
+    <creationDate>27/07/2015</creationDate>
+    <copyright>Copyright (C) 2015 Kristian Gausel</copyright>
+    <license>license</license>
+    <authorEmail>yurippenet@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>0.1</version>
+    <description>Navbar for the Butterflies Template</description>
+	<files>
+		<filename module="mod_butterfliesnavbar">mod_butterfliesnavbar.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>		
+		<filename>mod_butterfliesnavbar.xml</filename>
+	</files>
+	<media destination="mod_butterfliesnavbar" folder="media">
+        <folder>css</folder>
+        <folder>js</folder>
+    </media>
+	<languages>
+		<language tag="en-GB">en-GB.mod_butterfliesnavbar.ini</language>
+		<language tag="en-GB">en-GB.mod_butterfliesnavbar.sys.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_MENU" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="menutype"
+					type="menu"
+					label="MOD_BUTTERFLIESNAVBAR_MENUTYPE_LABEL"
+					description="MOD_BUTTERFLIESNAVBAR_MENUTYPE_DESC" />
+				<field
+					name="base"
+					type="menuitem"
+					label="MOD_BUTTERFLIESNAVBAR_ACTIVE_LABEL"
+					description="MOD_BUTTERFLIESNAVBAR_ACTIVE_DESC"
+					>
+					<option value="">JCURRENT</option>
+				</field>
+				<field
+					name="customhtml"
+					type="editor"
+					label="MOD_BUTTERFLIESNAVBAR_CUSTOMHTML_LABEL"
+					description="MOD_BUTTERFLIESNAVBAR_CUSTOMHTML_DESC"
+					/>
+				<field
+					name="topspacing"
+					type="number"
+					default="0"
+					label="MOD_BUTTERFLIESNAVBAR_TOPSPACING_LABEL"
+					description="MOD_BUTTERFLIESNAVBAR_TOPSPACING_DESC"
+					/>
+				<field 
+					name="skipfirst" 
+					type="checkbox" 
+					label="MOD_BUTTERFLIESNAVBAR_SKIPFIRST_LABEL" 
+					description="MOD_BUTTERFLIESNAVBAR_SKIPFIRST_DESC" 
+					value="1" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,51 @@
+
+
+.navlist ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navlist a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+}
+
+.navlist a:hover
+{
+    color: #e59906;
+}
+
+.navlist li
+{
+    display: inline;
+    margin-right: 30px;
+}
+
+.footermenu ul
+{
+}
+
+.footermenu li
+{
+    list-style-type: disc;
+}
+
+.footermenu a
+{
+    text-decoration: none;
+}
+
+.footermenu a:hover
+{
+    color: #e59906;
+}
+
+.footermenu h3
+{
+    background-color: #9f0000;
+}
+
